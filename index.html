@@ -56,7 +56,7 @@
             const seconds = Math.floor((distance % (1000 * 60)) / 1000);
             
             document.getElementById("countdown").innerHTML = 
-                `${days}d ${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
             
             if (distance < 0) {
                 document.getElementById("countdown").innerHTML = "PIZZA TIME!";
